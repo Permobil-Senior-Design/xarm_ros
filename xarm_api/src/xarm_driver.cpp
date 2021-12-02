@@ -65,7 +65,14 @@ namespace xarm_api
         nh_ = root_nh;
         nh_.getParam("DOF",dof_);
         root_nh.getParam("xarm_report_type", report_type_);
-
+        bool baud_checkset = true;
+        if (root_nh.hasParam("baud_checkset")) {
+            root_nh.getParam("baud_checkset", baud_checkset);
+        }
+        int default_gripper_baud = 2000000;
+        if (root_nh.hasParam("default_gripper_baud")) {
+            root_nh.getParam("default_gripper_baud", default_gripper_baud);
+        }
         
         arm = new XArmAPI(
             server_ip, 
@@ -83,6 +90,8 @@ namespace xarm_api
             DEBUG_MODE, // debug
             report_type_ // report_type
         );
+        arm->set_baud_checkset_enable(baud_checkset);
+        arm->set_checkset_default_baud(1, default_gripper_baud);
         arm->release_connect_changed_callback(true);
         arm->release_report_data_callback(true);
         // arm->register_connect_changed_callback(std::bind(&XArmDriver::_report_connect_changed_callback, this, std::placeholders::_1, std::placeholders::_2));
@@ -180,6 +189,7 @@ namespace xarm_api
         set_reduced_mode_server_ = nh_.advertiseService("set_reduced_mode", &XArmDriver::SetReducedModeCB, this);
         set_tcp_jerk_server_ = nh_.advertiseService("set_tcp_jerk", &XArmDriver::SetTcpJerkCB, this);
         set_joint_jerk_server_ = nh_.advertiseService("set_joint_jerk", &XArmDriver::SetJointJerkCB, this);
+        get_servo_angle_ = nh_.advertiseService("get_servo_angle", &XArmDriver::GetServoAngleCB, this);
 
         // state feedback topics:
         joint_state_ = nh_.advertise<sensor_msgs::JointState>("joint_states", 10, true);
@@ -211,10 +221,12 @@ namespace xarm_api
         gripper_action_server_->start(); 
 
         bool add_gripper = false;
+        gripper_added_ = false;
         bool rtt = nh_.getParam("add_gripper", add_gripper);
         // has "add_gripper" parameter and its value is true.
         if(rtt && add_gripper)
-        {
+        {   
+            gripper_added_ = true;
             int ret_grip = arm->get_gripper_position(&init_gripper_pos_);
             if(ret_grip || init_gripper_pos_<0 || init_gripper_pos_>max_gripper_pos)
                 ROS_ERROR("Abnormal when update xArm gripper initial position, ret = %d, pos = %f, please check the gripper connection!", ret_grip, init_gripper_pos_);
@@ -332,7 +344,9 @@ namespace xarm_api
     bool XArmDriver::ClearErrCB(xarm_msgs::ClearErr::Request& req, xarm_msgs::ClearErr::Response& res)
     {
         // First clear controller warning and error:
-        int ret1 = arm->clean_gripper_error();
+        if(gripper_added_)
+            int ret1 = arm->clean_gripper_error();
+
         int ret2 = arm->clean_error(); 
         int ret3 = arm->clean_warn();
 
@@ -352,7 +366,10 @@ namespace xarm_api
     {
         if(ClearErrCB(req, res))
         {
-            arm->set_mode(XARM_MODE::SERVO);
+            bool v_control = false;
+            nh_.getParam("velocity_control", v_control);
+
+            arm->set_mode(v_control ? XARM_MODE::VELO_JOINT : XARM_MODE::SERVO);
             int ret = arm->set_state(XARM_STATE::START);
             return ret == 0;
         }
@@ -1110,6 +1127,18 @@ namespace xarm_api
     {
         res.ret = arm->set_joint_jerk(req.data);
         res.message = "set joint jerk: " + std::to_string(req.data) + " ret = " + std::to_string(res.ret);
+        return res.ret >= 0;
+    }
+
+    bool XArmDriver::GetServoAngleCB(xarm_msgs::GetFloat32List::Request &req, xarm_msgs::GetFloat32List::Response &res)
+    {
+        res.datas.resize(7);
+        res.ret = arm->get_servo_angle(&res.datas[0]);
+        std::string tmp = "";
+        for (int i = 0; i < res.datas.size(); i++) {
+            tmp += (i == 0 ? "" : ", ") + std::to_string(res.datas[i]);
+        }
+        res.message = "datas=[ " + tmp + " ]";
         return res.ret >= 0;
     }
 
