@@ -90,7 +90,22 @@
         <mesh
           filename="package://xarm_gripper/meshes/left_outer_knuckle.STL" />
       </geometry>
+      <surface>
+        <friction>
+          <torsional>
+            <coefficient>100</coefficient>
+            <use_patch_radius>true</use_patch_radius>
+            <patch_radius>0.1</patch_radius>
+            <surface_radius>0.1</surface_radius>
+          </torsional>
+          <ode>
+            <mu>1</mu>
+            <mu2>1</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
+    
   </link>
   <joint
     name="${prefix}drive_joint"
@@ -146,6 +161,20 @@
         <mesh
           filename="package://xarm_gripper/meshes/left_finger.STL" />
       </geometry>
+      <surface>
+        <friction>
+          <torsional>
+            <coefficient>100</coefficient>
+            <use_patch_radius>true</use_patch_radius>
+            <patch_radius>0.1</patch_radius>
+            <surface_radius>0.1</surface_radius>
+          </torsional>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
   <joint
@@ -163,7 +192,7 @@
     <limit
       lower="0"
       upper="0.85"
-      effort="50"
+      effort="500"
       velocity="2" />
     <mimic joint="${prefix}drive_joint" multiplier="1" offset="0" />
   </joint>
@@ -203,6 +232,20 @@
         <mesh
           filename="package://xarm_gripper/meshes/left_inner_knuckle.STL" />
       </geometry>
+      <surface>
+        <friction>
+          <torsional>
+            <coefficient>100</coefficient>
+            <use_patch_radius>true</use_patch_radius>
+            <patch_radius>0.1</patch_radius>
+            <surface_radius>0.1</surface_radius>
+          </torsional>
+          <ode>
+            <mu>1</mu>
+            <mu2>1</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
   <joint
@@ -220,7 +263,7 @@
     <limit
       lower="0"
       upper="0.85"
-      effort="50"
+      effort="500"
       velocity="2" />
     <mimic joint="${prefix}drive_joint" multiplier="1" offset="0" />
   </joint>
@@ -260,6 +303,20 @@
         <mesh
           filename="package://xarm_gripper/meshes/right_outer_knuckle.STL" />
       </geometry>
+      <surface>
+        <friction>
+          <torsional>
+            <coefficient>100</coefficient>
+            <use_patch_radius>true</use_patch_radius>
+            <patch_radius>0.1</patch_radius>
+            <surface_radius>0.1</surface_radius>
+          </torsional>
+          <ode>
+            <mu>1</mu>
+            <mu2>1</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
   <joint
@@ -317,8 +374,23 @@
         <mesh
           filename="package://xarm_gripper/meshes/right_finger.STL" />
       </geometry>
+      <surface>
+        <friction>
+          <torsional>
+            <coefficient>100</coefficient>
+            <use_patch_radius>true</use_patch_radius>
+            <patch_radius>0.1</patch_radius>
+            <surface_radius>0.1</surface_radius>
+          </torsional>
+          <ode>
+            <mu>100</mu>
+            <mu2>100</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
+
   <joint
     name="${prefix}right_finger_joint"
     type="revolute">
@@ -374,6 +446,20 @@
         <mesh
           filename="package://xarm_gripper/meshes/right_inner_knuckle.STL" />
       </geometry>
+      <surface>
+        <friction>
+          <torsional>
+            <coefficient>100</coefficient>
+            <use_patch_radius>true</use_patch_radius>
+            <patch_radius>0.1</patch_radius>
+            <surface_radius>0.1</surface_radius>
+          </torsional>
+          <ode>
+            <mu>1</mu>
+            <mu2>1</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
   <joint
@@ -402,7 +488,7 @@
     name="${prefix}joint_tcp"
     type="fixed">
     <origin
-      xyz="0 0 0.172"
+      xyz="0 0 0.03"
       rpy="0 0 0" />
     <parent
       link="${prefix}xarm_gripper_base_link" />
