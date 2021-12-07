@@ -36,7 +36,7 @@
     --inorder '$(find xarm_description)/urdf/xarm7_with_vacuum_gripper.xacro'
     effort_control:=$(arg effort_control) velocity_control:=$(arg xarm_velocity_control)" />
 
-  <!-- spawn robot model in gazebo, located on the table -->
+  <!-- spawn robot model in gazebo, located on the table (slightly elevated) -->
   <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model"
     respawn="false" output="screen"
     args="-urdf -model xarm7 -x 0 -y 0 -z .05 -Y 0 -param robot_description"/>
