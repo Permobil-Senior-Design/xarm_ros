@@ -36,6 +36,7 @@
     * [7.2 手眼标定示例](#72-手眼标定示例)
     * [7.3 3D视觉抓取示例](#73-3D视觉抓取示例)
     * [7.4 在仿真的xArm模型末端添加RealSense D435i模型](#74-在仿真的xarm模型末端添加realsense-d435i模型)
+    * [7.5 颜色块抓取例子 (仿真+真机)](#75-颜色块抓取例子)
 * [8. 其他示例](#8-其他示例)
     * [8.1 两台xArm5 (两进程独立控制)](https://github.com/xArm-Developer/xarm_ros/tree/master/examples#1-multi_xarm5-controlled-separately)
     * [8.2 Servo_Cartesian 笛卡尔位置伺服](https://github.com/xArm-Developer/xarm_ros/tree/master/examples#2-servo_cartesian-streamed-cartesian-trajectory)
@@ -249,11 +250,12 @@ $ roslaunch xarm_description xarm7_rviz_display.launch
 'robot_dof'参数指的是xArm的关节数目 (默认值为7)。xarm_planner已经可以支持装载UF机械爪或真空吸头的xArm模型，请根据需要指定"**add_gripper**"或"**add_vacuum_gripper**"为true。   
 
 ## 5.7 xarm_api/xarm_msgs:
-&ensp;&ensp;这两个package提供给用户封装了xArm SDK功能的ros服务, xarm自带的控制盒会进行轨迹规划。当前支持八种运动命令（ros service同名）, 请首先务必确保手臂工作在正确的模式下, 参考[模式切换](#6-模式切换):  
+&ensp;&ensp;这两个package提供给用户封装了xArm SDK功能的ros服务, xarm自带的控制盒会进行轨迹规划。当前支持12种运动命令（ros service同名）, 请首先务必确保手臂工作在正确的模式下, 参考[模式切换](#6-模式切换):  
 #### 手臂模式0:
 * `move_joint`: 关节空间的点到点运动, 用户仅需要给定目标关节位置，运动过程最大关节速度/加速度即可， 对应SDK里的set_servo_angle()函数。 
 * `move_line`: 笛卡尔空间的直线轨迹运动，用户需要给定工具中心点（TCP）目标位置以及笛卡尔速度、加速度，对应SDK里的set_position()函数【不指定交融半径】。  
-* `move_lineb`: 圆弧交融的直线运动，给定一系列中间点以及目标位置。 每两个中间点间为直线轨迹，但在中间点处做一个圆弧过渡（需给定半径）来保证速度连续，对应SDK里的set_position()函数【指定了交融半径】。代码示例请参考[move_test.cpp](./xarm_api/test/move_test.cpp)  
+* `move_lineb`: 笛卡尔空间的直线轨迹运动, 同时与下一条运动指令做交融连续。可以准备一系列已知的中间点以及目标位置。 每两个中间点间为直线轨迹，但在中间点处做一个圆弧过渡（需给定半径）来保证速度连续，对应SDK里的set_position()函数【指定了交融半径和wait=false】。代码示例请参考[move_test.cpp](./xarm_api/test/move_test.cpp) 和 [blended_motion_test.py](./xarm_api/scripts/blended_motion_test.py)，为了提前进行交融运算，`/xarm/wait_for_finish` 参数必须设置为`false`。    
+* `move_jointb`: 关节空间的点到点运动, 同时与下一条运动指令做交融连续。可以与"move_lineb"混用实现关节和线性运动的交融，只要中间点位已知且交融半径正确设置, 速度将在执行过程中保持连续而不停顿。对应SDK里的set_servo_angle()函数【指定了交融半径和wait=false】。代码示例请参考[blended_motion_test.py](./xarm_api/scripts/blended_motion_test.py)，为了提前进行交融运算，`/xarm/wait_for_finish` 参数必须设置为`false`。    
 * `move_line_tool`: 基于工具坐标系（而不是基坐标系）的直线运动。对应SDK里的set_tool_position()函数。  
 另外需要 ***注意*** 的是，使用以上4种service之前，需要通过service依次将机械臂模式(mode)设置为0，然后状态(state)设置为0。这些运动指令的意义和详情可以参考产品使用指南。除此之外还提供了其他xarm编程API支持的service调用, 对于相关ros service的定义在 [xarm_msgs目录](./xarm_msgs/)中。  
 * `move_line_aa`: 笛卡尔空间的直线轨迹运动，姿态使用**轴-角** 而不是roll-pitch-yaw欧拉角，在使用此命令之前请仔细查阅xArm用户手册关于轴-角的解释。  
@@ -632,9 +634,36 @@ $ roslaunch d435i_xarm_setup grasp_node_xarm_api.launch
 如果使用UFACTORY提供的camera stand固定，可以通过以下设置添加到虚拟模型（以xarm7为例）：  
 1.同时带机械爪的模型： 设置[xarm7_with_gripper.xacro](./xarm_description/urdf/xarm7_with_gripper.xacro)的`add_realsense_d435i`参数为`true`。  
 2.同时带真空吸头的模型： 设置[xarm7_with_vacuum_gripper.xacro](./xarm_description/urdf/xarm7_with_vacuum_gripper.xacro)的`add_realsense_d435i`参数为`true`。  
-3.单纯附加相机在末端： 设置[xarm7_robot_macro.xacro](./xarm_description/urdf/xarm7_robot_macro.xacro)中`rs_d435i`的默认值为`true`。  
+3.单纯附加相机在末端： 设置[xarm7_robot.urdf.xacro](./xarm_description/urdf/xarm7_robot.urdf.xacro)中`add_realsense_d435i`的默认值为`true`。  
 
+## 7.5 颜色块抓取例子
+
+### 7.5.1 下载gazebo_grasp_plugin插件, 用于抓取仿真(melodic以上支持)
+```bash
+ # 进入ros命名空间src目录
+ $ cd ~/catkin_ws/src/
+ # 下载(针对不同ros版本请切换到对应分支)
+ $ git clone https://github.com/JenniferBuehler/gazebo-pkgs.git
+ # 编译
+ $ cd ..
+ $ catkin_make
+```
+### 7.5.2 Gazebo仿真(melodic以上支持)
+```bash
+ # 初始化gazebo场景和move_group
+ $ roslaunch xarm_gazebo xarm_camera_scene.launch robot_dof:=6
+
+ # 运行颜色块识别抓取脚本
+ $ rosrun xarm_gazebo color_recognition.py
+```
+### 7.5.3 真机+realsense_d435i
+```bash
+ # 启动move_group
+ $ roslaunch camera_demo xarm_move_group.launch robot_ip:=192.168.1.15 robot_dof:=6
+
+ # 运行颜色块识别抓取脚本(根据输出交互使用)
+ $ rosrun camera_demo color_recognition.py
+```
 
 # 8. 其他示例
 &ensp;&ensp;[在examples路径下](./examples)会陆续更新一些其他应用的demo例程，欢迎前去探索研究。
-
