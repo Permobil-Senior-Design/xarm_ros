@@ -24,7 +24,8 @@
   <!-- option to show rviz or not -->
   <arg name="show_rviz" default="true" />
   <!-- whether or not to load a moveit controller for gripper -->
-  <arg name="gripper_controller" />
+  <arg name="gripper_controller" default="true"/>
+  <arg name="for_mtc" default="false"/>
 
   <!-- Load the URDF, SRDF and other .yaml configuration files on the param server, limit joint range within [-pi, pi] -->
   <include file="$(find xarm7_gripper_moveit_config)/launch/planning_context.launch">

@@ -1,0 +1,1276 @@
+[33mcommit 217476ea3e76d1c80ca64ccb369ece4687e951f3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: jeoseo <jeongwoo.seo@vanderbilt.edu>
+Date:   Thu Dec 2 12:09:38 2021 -0600
+
+    unknown
+
+[33mcommit 7e11a7578b1d8d9a745f569cb1fef4221481418c[m
+Merge: fc07609 a123155
+Author: jeoseo <jeongwoo.seo@vanderbilt.edu>
+Date:   Thu Dec 2 12:09:01 2021 -0600
+
+    Merge remote-tracking branch 'refs/remotes/origin/master'
+
+[33mcommit fc07609d39213dfb4570f3d19019947caa3fd80e[m
+Author: jeoseo <jeongwoo.seo@vanderbilt.edu>
+Date:   Thu Dec 2 12:08:59 2021 -0600
+
+    gripper friction
+
+[33mcommit a1231554b4b4cddafc8f7f3b3baa3258715c9549[m
+Merge: 25ef373 a608f07
+Author: jeoseo <50963152+jeoseo@users.noreply.github.com>
+Date:   Thu Dec 2 12:08:07 2021 -0600
+
+    Merge branch 'xArm-Developer:master' into master
+
+[33mcommit a608f0767f2a8051c0a3b138cd0561efa0e2b5fa[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Wed Nov 24 11:17:55 2021 +0800
+
+    update xarm_sdk/cxx commits
+
+[33mcommit 8ae8104065525a1ad4c75d9e45f3d58489517bf6[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Nov 22 14:07:54 2021 +0800
+
+    fix errata in readme
+
+[33mcommit 25ef3732f47df60a9551825240ef7503bf7d0f86[m
+Author: jeoseo <jeongwoo.seo@vanderbilt.edu>
+Date:   Mon Nov 15 16:19:36 2021 -0600
+
+    fix controller for gazebo
+
+[33mcommit 3f010a0d7840f67097739c85270b2e1db3f124b6[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Nov 12 18:11:10 2021 +0800
+
+    optimize moveit_clear_err
+
+[33mcommit 68119ebf44b8bf28057c43051c4a72472c5bb87b[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Nov 12 10:07:34 2021 +0800
+
+    ReadMe update and catkin_make_isolated err fix
+
+[33mcommit 47812076ba564915dc1e6d4969b732dedc54db84[m
+Merge: 5d5b627 bc0e61b
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Wed Nov 10 15:36:18 2021 +0800
+
+    merge and remove debug log
+
+[33mcommit 5d5b627966e3c69da3e6d6e2350926963fa11544[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Wed Nov 10 14:36:52 2021 +0800
+
+    add baud checkset params and enforce_limits param
+
+[33mcommit bc0e61b88c02d26d9a92e2e8f79de27f362a4bf4[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Nov 5 18:05:00 2021 +0800
+
+    Update ReadMe for xArm Vision
+
+[33mcommit 07c57e573afa6bbca5d14ed7fe761d305bc18576[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Fri Nov 5 15:23:01 2021 +0800
+
+    update xarm_controller state check
+
+[33mcommit f3e720991c26b71823c1c14755e111adcba959ac[m
+Author: jeoseo <jeongwoo.seo@vanderbilt.edu>
+Date:   Thu Nov 4 14:38:44 2021 -0500
+
+    change moveit launch files to work with mtc
+
+[33mcommit 6fa08871ad2aad53a555bd8194d036d4c6f8b21b[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Nov 4 10:59:04 2021 +0800
+
+    fix all-zero command at moveit application initialization
+
+[33mcommit 29bcd68910d5832db7959e1624d5a1eea94c3a72[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Nov 3 18:25:12 2021 +0800
+
+    add xarm_vision and remove xarm_device
+
+[33mcommit 919a59749bc3659d32d5e46791abb0bded3e304f[m
+Author: jeoseo <jeongwoo.seo@vanderbilt.edu>
+Date:   Tue Nov 2 13:35:19 2021 -0500
+
+    fix gripper
+
+[33mcommit eb34130fee797a04a8271f459e9013b9055666ed[m
+Merge: d40dcf7 9eff50d
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Nov 2 10:57:05 2021 +0800
+
+    Merge branch 'dev' of http://192.168.1.19/gitlab/vinman/xarm_ros
+
+[33mcommit d40dcf7a66bf5aa34b778cf40d2ec92b3bd5825b[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Nov 2 10:56:52 2021 +0800
+
+    test for realsense, add some collision stl
+
+[33mcommit 9eff50dc3aad2d4823f1ef5f2589f05c9d94bd3c[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Tue Nov 2 10:44:16 2021 +0800
+
+    fix eval expression
+
+[33mcommit 74abc6197437adffffb0596c0069c8cf50030d46[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Mon Nov 1 16:01:42 2021 +0800
+
+    fix load gazebo_ros_control parameters
+
+[33mcommit 263a11421e6ebc99d159025d98e7156e96e74851[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Fri Oct 29 10:45:06 2021 +0800
+
+    xarm_hw_interface: use read replace report
+
+[33mcommit 204683605156ce0713e34b3678a36bfc2ede8855[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Fri Oct 29 10:43:47 2021 +0800
+
+    update xarm_sdk commit
+
+[33mcommit 8baefe0a2935c88fb8bd2061014ae45380118c4d[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Fri Oct 29 10:35:46 2021 +0800
+
+    add service get_servo_angle
+
+[33mcommit 65f1d57e70c14522ac20c59dff99f5f439494ea9[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Thu Oct 28 19:39:03 2021 +0800
+
+    fix call_service
+
+[33mcommit 135cd75f4389ee65b6d73f2cbdaad229c8af5039[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Tue Oct 26 16:04:40 2021 +0800
+
+    add header to robot_msg/cio_state_msg
+
+[33mcommit bcd700766127a623fc98850b1ed5726776d5f894[m
+Merge: 8fd6d17 13c64d3
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Tue Oct 26 15:33:45 2021 +0800
+
+    Merge branch 'dev' of 192.168.1.19:vinman/xarm_ros into dev
+
+[33mcommit 3c4aadd04692066be0d6b79024355c9c9f53fd0b[m
+Merge: 13c64d3 14c5f64
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Oct 25 20:18:29 2021 +0800
+
+    Merge branch 'master' of github.com:xArm-Developer/xarm_ros
+
+[33mcommit 13c64d3e1256424a15e67421e69b09b396dade2d[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Oct 25 20:16:18 2021 +0800
+
+    add xarm_hw.wait_fbk_start and update initial gripper state for real arm case
+
+[33mcommit 8fd6d17162df8c6c995f3a3603498073b90756f8[m
+Merge: 14c5f64 2614eee
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Thu Oct 21 17:28:24 2021 +0800
+
+    Merge branch 'dev' of 192.168.1.19:vinman/xarm_ros into dev
+
+[33mcommit 2614eee82d30230b25c712c6cea91d6f894a7761[m
+Merge: f8843f1 4b76237
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Oct 21 17:17:34 2021 +0800
+
+    Merge branch 'master' into dev
+
+[33mcommit 4b762378f30834e77d4ca368ebd6b9817b7fce04[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Oct 21 17:13:19 2021 +0800
+
+    check for feedback topic before sending cmd to robot in control_node
+
+[33mcommit 14c5f6436e7b8ea321b250f47049bef675b02605[m
+Merge: e53c3cc e477483
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Tue Oct 12 14:24:37 2021 +0800
+
+    Merge branch 'master' of github.com:xArm-Developer/xarm_ros
+
+[33mcommit e53c3cc773581ec4414ea348a3ec0443cbe0d55c[m
+Merge: f8843f1 d4d2d68
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Tue Oct 12 14:24:12 2021 +0800
+
+    Merge branch 'master' of 192.168.1.19:vinman/xarm_ros
+
+[33mcommit f8843f1e7cbf3c01858b04792fe3ddecaa95cda9[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Tue Oct 12 14:21:18 2021 +0800
+
+    fix rosparam load with namespace in xarm_planner
+
+[33mcommit e477483ee8ecac49907e39a8f67f27c86da36588[m
+Merge: 6ad70c4 e731ca8
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Sep 29 18:09:51 2021 +0800
+
+    merged with vinman
+
+[33mcommit d4d2d68c58be124d288765f2ee1c8e65e627ccf5[m
+Merge: 6ad70c4 e731ca8
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Sep 29 18:09:51 2021 +0800
+
+    Merge branch 'master' of http://192.168.1.19/gitlab/vinman/xarm_ros
+
+[33mcommit 6ad70c4fc31105f07594dc6fa9f3cdf054e4b8c1[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Sep 29 18:09:02 2021 +0800
+
+    changed name of timed velocity control service and update readme
+
+[33mcommit e731ca81a3188db4bcc7d7e3a19fe792aeac93da[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Sun Sep 26 15:13:41 2021 +0800
+
+    delete xarm_camera
+
+[33mcommit 03a0e9c04158fcf2364b56bf1000eec97a0c38ea[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Thu Sep 23 17:54:15 2021 +0800
+
+    add parameter duration to vc control
+
+[33mcommit b8398fd3ccdc199665b1ad868d5f726fd73a0ecc[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Thu Sep 23 15:37:51 2021 +0800
+
+    fix namespace
+
+[33mcommit 004c5cd5971aed53c86a4af7e1047e59a085e365[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Fri Jul 23 11:40:53 2021 +0800
+
+    velocity control
+
+[33mcommit 935828d1a438eff35a5380856d4aa9aca515f59d[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Mon Jul 19 17:00:36 2021 +0800
+
+    remove condition(or) in srdf
+
+[33mcommit 5dd632ffd0552d067aeecb351823330141b0d808[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Mon Jul 19 15:51:00 2021 +0800
+
+    fix load other geometry
+
+[33mcommit ef4e36a77bfc2c9673e652d24757ee6a1aa8a71f[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Jul 15 12:16:59 2021 +0800
+
+    optimize for ROS Kinetic
+
+[33mcommit 40cc594ff8b40e326809715f37179190a4790fda[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Jul 14 10:42:20 2021 +0800
+
+    Update English ReadMe for custom Moveit tool
+
+[33mcommit 8692c3dd42fdd37055654c62ed24b130db9ac184[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Mon Jul 12 11:48:33 2021 +0800
+
+    update README
+
+[33mcommit 0002ade2c957a6506ec761c555e150bc19173807[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Fri Jul 9 10:57:07 2021 +0800
+
+    fix disable collisions for xarm6
+
+[33mcommit a2644a6184014838d1033a10eb7152a2071b6da7[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Thu Jul 8 11:00:11 2021 +0800
+
+    support load other model attach to end_effector
+
+[33mcommit 122d3a1179d7b1fe1bf243338e8e5d47789d2cb5[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Wed Jul 7 18:25:07 2021 +0800
+
+    fix service code
+
+[33mcommit 40996fe1b06e66e1f1d8ad91480c2ce347f5916d[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Wed Jul 7 18:06:51 2021 +0800
+
+    add service set_world_offset/set_fence_mode/set_reduced_mode/set_tcp_jerk/set_joint_jerk
+
+[33mcommit bbba7e694551d8ddeefcfc88dd4f1de74d424272[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Jul 1 17:53:33 2021 +0800
+
+    correction of IO number notations
+
+[33mcommit 5f7d38eb8853d7a60485be5dfe8f4af6e502223d[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Thu Jul 1 14:43:12 2021 +0800
+
+    check xarm service status on xarm_hw
+
+[33mcommit 14ed624281052624327288de6e75bcb97d06213f[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Mon Jun 28 15:44:45 2021 +0800
+
+    add package_name folder in package include path and fix build/install
+
+[33mcommit b01fd403d249c89ebdd5fce55c1aeafc2b52ee49[m
+Author: Vinman <vinman.cub@gmail.com>
+Date:   Fri Jun 25 11:20:28 2021 +0800
+
+    suport catkin_make/catkin_make_isolated/colcon build
+
+[33mcommit afed3000a65f5b8f7c4466ebc52a9bcecb5bf064[m
+Author: vinman <vinman.cub@gmail.com>
+Date:   Tue Jun 8 17:59:47 2021 +0800
+
+    add service: set_collision_sensitivity set_teach_sensitivity
+
+[33mcommit 64961bf42e2dda81c797f2a6888041fcbc868dc2[m
+Author: vinman <vinman.cub@gmail.com>
+Date:   Tue Jun 8 17:32:24 2021 +0800
+
+    add service: set_collision_rebound
+
+[33mcommit 4bf656cfbab196225a110a2a0c9486742ec624a2[m
+Author: vinman <vinman.cub@gmail.com>
+Date:   Mon May 31 10:25:01 2021 +0800
+
+    update doc
+
+[33mcommit fee561a4cbb81bbad5ccb20ade1eaf5287d2ec10[m
+Author: vinman <vinman.cub@gmail.com>
+Date:   Fri May 28 17:42:55 2021 +0800
+
+    add xarm_sdk build message
+
+[33mcommit 345db16f17a4ec7c2ae0a3bc03b5ee2afbd9d3b7[m
+Author: vinman <vinman.cub@gmail.com>
+Date:   Fri May 28 16:12:52 2021 +0800
+
+    update gripper controll name
+
+[33mcommit b3f300e535e02e0d123fdc00ebd8d024cf6e5333[m
+Author: vinman <vinman.cub@gmail.com>
+Date:   Fri May 28 15:51:39 2021 +0800
+
+    add gripper action command
+
+[33mcommit 941123762e1f4d05aebfd61beb12de08b21fbd9b[m
+Merge: eb2a4a1 6563a2c
+Author: vinman <vinman.cub@gmail.com>
+Date:   Fri May 28 12:32:33 2021 +0800
+
+    merge github master
+
+[33mcommit eb2a4a14144a700ab1d64ef755dc8229cbe6553b[m[33m ([m[1;33mtag: v1.4.0[m[33m)[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri May 21 18:14:39 2021 +0800
+
+    optimize communication time-out handling, set robot to stop
+
+[33mcommit ebcfdc6bdc48a6e45d5013f4132bc8926c811a30[m
+Author: jason peng <jason@ufactory.cc>
+Date:   Fri May 7 23:43:45 2021 +0800
+
+    fix run_recorded_traj building error
+
+[33mcommit 449cffab2492e219403866efaefc631810660b42[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Apr 27 15:43:19 2021 +0800
+
+    Update ReadMe
+
+[33mcommit 7cf2bf60c9302112544bbde71b513747a67ac28a[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Apr 27 15:38:20 2021 +0800
+
+    add traj record/play (beta) function
+
+[33mcommit 6563a2c97f2adcf8764d8d75c7ec62b7a175118f[m
+Author: vinman <vinman.cub@gmail.com>
+Date:   Fri Apr 16 18:19:32 2021 +0800
+
+    use eval
+
+[33mcommit 21d7b7981f4ae8a7aa50fe86085c1a30697f6aa2[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Apr 15 18:01:06 2021 +0800
+
+    fix gazebo controller initialization issue in Kinetic
+
+[33mcommit 858e463a8c5edaf126d9e79a03f157286e0d9c34[m
+Author: vinman <vinman.cub@gmail.com>
+Date:   Wed Apr 14 10:55:33 2021 +0800
+
+    update
+
+[33mcommit 2db5f3d9368e73da83a2a307871d0cce6df49649[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Apr 12 15:42:43 2021 +0800
+
+    add dependencies for ROS buildfarm Jenkins task
+
+[33mcommit eebdb3a8768fa291329e5567a4768d74024027ee[m
+Author: vinman <vinman.cub@gmail.cc>
+Date:   Mon Apr 12 11:17:32 2021 +0800
+
+    modify readme
+
+[33mcommit 25b2c300682bb8d16b4903b6b482c72d1cd5c270[m
+Author: vinman <vinman.cub@gmail.cc>
+Date:   Mon Apr 12 10:22:54 2021 +0800
+
+    modify readme
+
+[33mcommit 1f9c75dc509ab63b7877202d8a0964ba48107594[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Apr 9 16:41:51 2021 +0800
+
+    fix multi_xarm5 robot_description not found issue
+
+[33mcommit b9d8e7d2da901e7a9eb794e4b890cf1569c13834[m
+Author: vinman <vinman.cub@gmail.cc>
+Date:   Fri Apr 9 12:00:58 2021 +0800
+
+    update readme
+
+[33mcommit 01da79df00db2058b95dbffbb7e02218a4e77a47[m
+Merge: 57d1173 ebd92e5
+Author: vinman <vinman.cub@gmail.cc>
+Date:   Fri Apr 9 11:52:45 2021 +0800
+
+    Merge branch 'dev' of 192.168.1.19:vinman/xarm_ros into dev
+
+[33mcommit 57d11731ff8cbbbfec0d1c3a19a736cd7217731b[m
+Author: vinman <vinman.cub@gmail.cc>
+Date:   Fri Apr 9 11:52:31 2021 +0800
+
+    add submodule
+
+[33mcommit ebd92e52fa146c9fff216065071bf2459c399146[m
+Merge: e303b4a 42a33bc
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Mar 30 17:53:12 2021 +0800
+
+    Merge branch 'master' of github.com:xArm-Developer/xarm_ros into dev
+
+[33mcommit e303b4acfe5d900f01906d2825f05ce514e705d2[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Mar 30 17:50:46 2021 +0800
+
+    update ReadMe
+
+[33mcommit 42a33bc2a92f89e9a5f32e760af3098824bfe784[m
+Merge: 881f91e 8f3fa6a
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Mon Mar 29 10:49:10 2021 +0800
+
+    Merge pull request #66 from xArm-Developer/dependabot/pip/examples/xarm7_redundancy_res/pyyaml-5.4
+    
+    Bump pyyaml from 5.3.1 to 5.4 in /examples/xarm7_redundancy_res
+
+[33mcommit 8f3fa6a090bcd20b8971e1467918398275a5ec46[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Mar 26 00:00:25 2021 +0000
+
+    Bump pyyaml from 5.3.1 to 5.4 in /examples/xarm7_redundancy_res
+    
+    Bumps [pyyaml](https://github.com/yaml/pyyaml) from 5.3.1 to 5.4.
+    - [Release notes](https://github.com/yaml/pyyaml/releases)
+    - [Changelog](https://github.com/yaml/pyyaml/blob/master/CHANGES)
+    - [Commits](https://github.com/yaml/pyyaml/compare/5.3.1...5.4)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit d7dd6d921d4f7a488ed23c4b95e489af29918577[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Wed Mar 24 18:18:27 2021 +0800
+
+    add velocity control in gazebo
+
+[33mcommit 94fcc80ca8624cc75876cfc0b424a7a328b6ad40[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Tue Mar 23 12:21:20 2021 +0800
+
+    add joint_limits_interface
+
+[33mcommit 45d28906e99aaa96a85cc153c7792f7860ade710[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Mar 19 14:52:03 2021 +0800
+
+    typo fix
+
+[33mcommit 4ad3694e9c4235bdee4aa48e1cde1689e8629eae[m
+Merge: c5adf47 80ed0e0
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Mar 19 14:25:00 2021 +0800
+
+    Merge branch 'dev' of http://192.168.1.19/gitlab/vinman/xarm_ros into dev
+
+[33mcommit c5adf471a08f5fa0596b0be25881fb368939cf56[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Mar 19 14:22:51 2021 +0800
+
+    add set_max_acc service and ReadMe for velocity mode
+
+[33mcommit 80ed0e0ebcae6ac6c1643970b18f6c5633e63491[m
+Merge: 4756490 5448c81
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Thu Mar 18 16:45:23 2021 +0800
+
+    Merge branch 'dev' of 192.168.1.19:vinman/xarm_ros into dev
+
+[33mcommit 475649038d773008ab8d760662de1c1681b4df9e[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Thu Mar 18 16:45:09 2021 +0800
+
+    fix report type
+
+[33mcommit 69e547a51d620a7754b58d3cb281e24e36f46e27[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Wed Mar 17 14:31:31 2021 +0800
+
+    add param report_type to all launch
+
+[33mcommit 5448c81f6eb2d347aa6cac82ae09c072c0e13fbd[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Mar 16 19:15:36 2021 +0800
+
+    remove useless parameter control_rate
+
+[33mcommit b508d94941ce08639471e365b8bc38ecd129a8e8[m
+Merge: 5b0529a 33d47b4
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Mar 16 18:56:50 2021 +0800
+
+    Merge branch 'dev' of http://192.168.1.19/gitlab/vinman/xarm_ros into dev
+
+[33mcommit 33d47b4bae06d4b191d2444e42acb3320f18d5c6[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Fri Mar 12 18:04:30 2021 +0800
+
+    fix velocity value and disable debug mode
+
+[33mcommit 5b0529a6eba0eeeed54b6494a0e5de881d975101[m
+Merge: 6d5cd59 162fb22
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Mar 12 09:59:31 2021 +0800
+
+    Merge branch 'dev' of http://192.168.1.19/gitlab/vinman/xarm_ros into dev
+
+[33mcommit 6d5cd59df1952b14b59fd0a362a244a20b1f61f8[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Mar 12 09:58:48 2021 +0800
+
+    add robot_description parameter check at hw interface
+
+[33mcommit 162fb2253d6c964e66ba6542016efa652ad8dcd1[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Mon Mar 8 16:06:10 2021 +0800
+
+    support param report_type and support xarm_cgpio_states topic
+
+[33mcommit 04cd212477feb11efd621916b3b1146499e6f7f3[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Mar 4 11:12:41 2021 +0800
+
+    tested OK under windows
+
+[33mcommit a9670e7f3f27b96debffc61a7c98e3a0283383b8[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Wed Mar 3 16:17:29 2021 +0800
+
+    add .gitignore
+
+[33mcommit 4fd9d0fe8ac9ba248ba40d4588e7d19a89c0583a[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Wed Mar 3 16:17:13 2021 +0800
+
+    merge window xarm-c++ sdk
+
+[33mcommit 546dbe356ecca05094cdb31bfc298fa69822fb05[m
+Merge: 10f4864 a68ad7a
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Wed Mar 3 14:31:44 2021 +0800
+
+    merge github
+
+[33mcommit 10f4864d6ada3ae98fdc4a7d500b30b65f29f9e9[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Wed Mar 3 14:09:49 2021 +0800
+
+    save
+
+[33mcommit a68ad7aec80a6a827bd5128ca6769f6f6022e824[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Wed Mar 3 12:23:17 2021 +0800
+
+    merge github
+
+[33mcommit 3ec80be40fa173cb3b36ceb26ad3263cae57536e[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Tue Mar 2 19:27:10 2021 +0800
+
+    fix lost packet
+
+[33mcommit 881f91e1cd06aef510ad77e9c5c00e7871ae0477[m
+Merge: e14846d e44205d
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Mar 2 19:21:43 2021 +0800
+
+    merge ms-iot PR, compatible with Windows
+
+[33mcommit e44205dc57bdb11fec3d5e6aedc332f5a066105b[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Mar 2 19:13:42 2021 +0800
+
+    fix merge conflict with ms-iot PR
+
+[33mcommit 3f5957554c653c0ff68fa6e95855a0c128b28d3a[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Thu Feb 25 19:01:41 2021 +0800
+
+    unpack the tcp report package
+
+[33mcommit 51760a3dfe373032824fae5a093e6e17072d3de5[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Wed Feb 24 17:22:40 2021 +0800
+
+    replace the xarm c++ sdk
+
+[33mcommit b0e64b44f52ccfac96df689bd3913c802f002941[m
+Author: vinman <vinman.cub@ufactory.cc>
+Date:   Tue Feb 23 16:42:56 2021 +0800
+
+    add velocity control api
+
+[33mcommit 7218362712a724ea3d692d568961fe50e67bd370[m
+Merge: b5003fb 1c9609b
+Author: Lior Lustgarten <45467030+lilustga@users.noreply.github.com>
+Date:   Mon Feb 22 10:08:01 2021 -0800
+
+    Merge pull request from lilustga/master
+    
+    xarm_ros builds and runs on Windows (Socket)
+
+[33mcommit e14846d535f2798d785d71699d0f8a683085153f[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Sat Feb 6 17:03:23 2021 +0800
+
+    add printed info for abnormal disconnection
+
+[33mcommit 1c9609b76be7220778e2b498559bc6d21de0bc2f[m
+Author: Lior <lilustga@microsoft.com>
+Date:   Fri Jan 29 17:12:38 2021 -0800
+
+    Builds and runs on linux, needs testing with physical robot.
+
+[33mcommit 2a269d39963a28581ab23865ffbf83c3efe7c33f[m
+Author: lilustga <lilustga@microsoft.com>
+Date:   Fri Jan 29 16:52:59 2021 -0800
+
+    import update for building on linux
+
+[33mcommit 584eeb9899f61148f5039d8b385494df36fb50d8[m
+Author: lilustga <lilustga@microsoft.com>
+Date:   Fri Jan 29 14:29:35 2021 -0800
+
+    Changed to ros::Duration::sleep and ifdefed out the serial code on Windows.
+
+[33mcommit 68895e57051a8651984466c37576a82411081d57[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Jan 27 17:44:57 2021 +0800
+
+    fix Eigen assertion failure, add set_state(STOP) in set_mode service
+
+[33mcommit f889999e488a45612a1c92056a049576e57020a0[m
+Author: lilustga <lilustga@microsoft.com>
+Date:   Wed Jan 13 18:16:05 2021 -0800
+
+    Added thread detach. code cleanup
+
+[33mcommit 5090693c204acae656aa4a30371e6bdf5227c809[m
+Merge: 68ad526 b5003fb
+Author: lilustga <lilustga@microsoft.com>
+Date:   Tue Jan 12 15:41:08 2021 -0800
+
+    Merge branch 'master' of https://github.com/lilustga/xarm_ros into master
+
+[33mcommit 68ad5264986aa3e62b3282d79eff23d76b56e6da[m
+Author: lilustga <lilustga@microsoft.com>
+Date:   Tue Jan 12 15:40:57 2021 -0800
+
+    Builds on windows.
+
+[33mcommit b5003fbd21e50f6e7f05f4ee1af2f42f95b11143[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Jan 6 15:55:59 2021 +0800
+
+    tcp offset effective for xarm gripper moveit planning, add move_line_aa and controller analog pin srv
+
+[33mcommit 21b783cc2e78beb16b10c35875ef9da2b76974d3[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Jan 5 17:33:54 2021 +0800
+
+    enable gripper/vacuum_gripper TCP offset in Moveit
+
+[33mcommit aa81c27179274087db339eeb697a25afbaf4f08b[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Dec 31 11:30:49 2020 +0800
+
+    mode switch bug notice and optimized moveit controller logic
+
+[33mcommit c27afc49864904e8af9b0c54fbd5959121600af9[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Dec 24 16:31:04 2020 +0800
+
+    add load_gazebo_plugin argument in robot_macro.xacro, to help prevent repetitive loading of gazebo_ros_control plugin for multi-robot gazebo simulations
+
+[33mcommit 87c08a520cf0c17c10676d12aa897c7c8b237c5e[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Dec 23 10:58:30 2020 +0800
+
+    fix dependency typo
+
+[33mcommit 94468247976423268af8e60c5cd11f6749023e2f[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Dec 22 17:42:03 2020 +0800
+
+    addressing issues #50, #53 and #54
+
+[33mcommit 34e42794598c3ac2eefce37cf82767dbc9c85718[m
+Merge: 5615f98 a85316a
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Dec 4 18:42:11 2020 +0800
+
+    Merge branch 'master' of github.com:xArm-Developer/xarm_ros
+
+[33mcommit 5615f98938a0d7db7edee1d31f7ce026ff8216bb[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Dec 4 18:41:31 2020 +0800
+
+    add vacuum gripper model and moveit support
+
+[33mcommit a85316a54bb45a76bc19b3537ca607d6737d1d38[m
+Merge: 8440126 3eb6918
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Fri Dec 4 09:41:10 2020 +0800
+
+    Merge pull request #44 from gibernas/full-repo
+    
+    Minor fix
+
+[33mcommit 3eb69189f80aec09c38d8c3e6b8cdf1c07785681[m
+Author: Gianmarco Bernasconi <gibernas@ethz.ch>
+Date:   Thu Dec 3 14:24:01 2020 +0100
+
+    Minor fix
+    
+    Renamed node type `state_publisher` (non existant) to the correct `robot_state_publisher`.
+
+[33mcommit 8440126760c3838d4418cf0df6ccda4693a3bcdc[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Dec 2 10:42:01 2020 +0800
+
+    fix bug according to issue #43
+
+[33mcommit 055b1bab1ac7c7966884c2797db09f42730e2ae9[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Nov 25 17:11:47 2020 +0800
+
+    fix launching failure issue of dual-arm application
+
+[33mcommit c838f1d47633ffd1637fe0c494c0ff9d3df212af[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Nov 24 15:59:29 2020 +0800
+
+    add execution dependencies for ros_controllers and ros_control
+
+[33mcommit 10bbf6e25e6de2cfe1cebe09c144f887f8d2c014[m
+Merge: 1c9be49 3cfd6ac
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Nov 24 15:39:41 2020 +0800
+
+    Merge branch 'master' of github.com:xArm-Developer/xarm_ros
+
+[33mcommit 1c9be4971d0d550bd2a6a91046be7ee8c6cdf2fb[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Nov 24 15:39:10 2020 +0800
+
+    auto-save in tcp offset and load setting, optimized to reduce cpu occupation
+
+[33mcommit 3cfd6ac92d3a0b0588e70d26b97cf9bd798a4ed0[m
+Merge: 472f475 09714df
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Tue Nov 24 15:33:55 2020 +0800
+
+    Merge pull request #42 from chengkun/master
+    
+    add exec_depend ros_controllers
+
+[33mcommit 09714dfbfab03beb8a0a2ed04a5958c24c485307[m
+Author: Chengkun <chenchengkun@gmail.com>
+Date:   Tue Nov 17 09:18:49 2020 +0800
+
+    add exec_depend ros_controllers
+    
+    avoid some error when using moveit config and planner.
+
+[33mcommit 472f475d2d4a3b2cd6fd34e1ce7a024c9c416045[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Oct 22 10:30:32 2020 +0800
+
+    add estimated joint effort to /joint_states topic
+
+[33mcommit a482bf8fd52d4439b19a387614db1f2ffc2215bc[m
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Tue Sep 8 17:24:59 2020 +0800
+
+    Update ReadMe.md
+
+[33mcommit d77d15a1e04173898914582c85fdc11aa160d003[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Sep 8 15:58:40 2020 +0800
+
+    update example code for xarm_api
+
+[33mcommit 2219a475175118c2f843286f3fa5137bf8dc182e[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Sep 7 19:48:50 2020 +0800
+
+    add example for servo_cartesian service calling
+
+[33mcommit 388d0a3d37e36ad44ce5d693c3357c322417f7d2[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Sep 1 18:23:59 2020 +0800
+
+    add vaccum gripper control service
+
+[33mcommit c683c6f335c808bdbc8f96b120fa9d4827d17be1[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Jul 29 12:26:21 2020 +0800
+
+    fix buildfarm failure with catkin_make_isolated --install
+
+[33mcommit 0e515df4d2a806a8160576bde5fd11bafea712c2[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Jul 28 15:02:25 2020 +0800
+
+    fix issues from catkin_make_isolated and catkin build
+
+[33mcommit 22c72f4a8c115ab36d4d949979dafe0e0b0c70d6[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Jul 28 12:12:58 2020 +0800
+
+    fix dependency issues
+
+[33mcommit 769b0cf5fbd5b969b09963485be29f5a4f47c44f[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Jul 28 10:37:51 2020 +0800
+
+    fix dependency issue for xarm_controller
+
+[33mcommit 85ff5578094c13a8435bd12d88fe4fbe2992489d[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Jul 20 11:41:31 2020 +0800
+
+    update readme
+
+[33mcommit ac974e3528ffb6b3ea0fd82819d6c155f5b4be5e[m
+Merge: c5cab08 94faeb2
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Jul 20 11:36:43 2020 +0800
+
+    Merge branch 'master' of github.com:xArm-Developer/xarm_ros
+
+[33mcommit c5cab0850c34eb31a6cae5dc5fe13cd3524bfc6b[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Jul 20 11:35:50 2020 +0800
+
+    add controller digital IO services
+
+[33mcommit 94faeb26abaf192b74fefb49db0e3d2fcb7f4d43[m
+Merge: 56e8213 4a73cd4
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Mon Jul 20 09:37:18 2020 +0800
+
+    Merge pull request #31 from stevens-armlab/xarm
+    
+    An example of demonstrating redundancy resolution using MoveIt
+
+[33mcommit 4a73cd44816075b041504ec2a50cf834513a486c[m
+Merge: 8bafc1c 56e8213
+Author: Long Wang <lwang4@stevens.edu>
+Date:   Sat Jul 18 20:50:19 2020 -0400
+
+    Merge branch 'master' of github.com:xArm-Developer/xarm_ros into xarm
+
+[33mcommit 8bafc1c126bbb2ebe3d92a038b371570e36daef1[m
+Author: haotiangu1993 <47264363+haotiangu1993@users.noreply.github.com>
+Date:   Mon Jul 13 14:09:06 2020 -0400
+
+    improved function command line interface for redundancy resolution example; updated readme
+
+[33mcommit e0c1d2f0e97003b875ddd1ba595326f16dee0e16[m
+Author: Long Wang <lwang4@stevens.edu>
+Date:   Tue Jul 7 23:52:07 2020 -0400
+
+    redundancy resolution simulation tested; Added ReadMe.md file describing use of virtualenv in running the robot_jogging.py script; Modified ReadMe.md for xarm redundancy resolution to reflect the fact that ~ does not work as a representation of the user's home directory when running inside python.
+
+[33mcommit 56e8213dca80a2cb8f8d2a9d7a42d252ff591baa[m
+Merge: 9aabe2a 3090c70
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Sun Jul 5 10:11:04 2020 +0800
+
+    Merge pull request #28 from ldemk/master
+    
+    added xarm_msgs to xarm_gripper dependency
+
+[33mcommit 3090c70a114cfee30b0da66f9a9b26ae9d5ce0e5[m
+Author: root <ldemk@softserveinc.com>
+Date:   Thu Jul 2 12:23:47 2020 +0000
+
+    added xarm_msgs
+
+[33mcommit 9aabe2abf3f807221f742d9a5d8304b223b05404[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Jun 24 18:50:15 2020 +0800
+
+    license fix
+
+[33mcommit 2dad9fa8add648b70248a05cce9a38e52d7781a3[m[33m ([m[1;33mtag: v1.3.0[m[33m)[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Jun 23 17:04:34 2020 +0800
+
+    add limited:=true for gripper moveit packages
+
+[33mcommit 1d1960c583f3ca9bb8cc56b61cd552a0185e2025[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Jun 19 17:25:50 2020 +0800
+
+    add griper_moveit_config packages for xArm7 and xArm5
+
+[33mcommit c2205d5ac3a4ba834284ba875a6307324f538655[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Jun 18 12:30:07 2020 +0800
+
+    bug fix
+
+[33mcommit d76bd6a37cb4ae73997d0ca6539822b51f4b18f0[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Jun 17 18:47:22 2020 +0800
+
+    update ReadMe for Gripper Action
+
+[33mcommit f13ff7934631fce67ba6d8d70531500fe863752b[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Jun 11 19:38:50 2020 +0800
+
+    bug fix
+
+[33mcommit 43e97e7985ebc8b2b6b313c8ea5d3c62eb3a46ec[m
+Merge: 2bdf378 2205866
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Jun 11 19:31:10 2020 +0800
+
+    merged pull-request
+
+[33mcommit 2bdf37836f057274a1aa9ff3ae9673cb4f8d8780[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Jun 11 19:26:31 2020 +0800
+
+    optimization and gripper action support
+
+[33mcommit 22058661185c07514dfd6254b84aea01d3876cba[m
+Merge: 841509f d930bc2
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Thu Jun 11 06:49:43 2020 +0800
+
+    Merge pull request #24 from xqms/isolated_build_fix
+    
+    xarm_controller: don't try to link to targets in another package
+
+[33mcommit d930bc2d4cf9987241a63e6514dbb64a308ef203[m
+Author: Max Schwarz <max.schwarz@ais.uni-bonn.de>
+Date:   Mon Jun 8 19:02:35 2020 +0200
+
+    xarm_controller: don't try to link to targets in another package
+    
+    Instead use ${catkin_LIBRARIES}.
+
+[33mcommit 841509f3eccc31abdd3f476f75ca66f7b49ecedc[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri May 29 18:55:11 2020 +0800
+
+    add wait_for_finish parameter
+
+[33mcommit df47ed1e18ba2133a2fa089187dfa1180dfd33f4[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri May 22 20:27:42 2020 +0800
+
+    add test_tool_modbus
+
+[33mcommit ef1adee735503952f282136132730df10cc82bb0[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri May 22 10:47:07 2020 +0800
+
+    tool modbus serivce bug fix
+
+[33mcommit 3d315677358a16571bc381660625190f99a61aca[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed May 20 18:22:41 2020 +0800
+
+    tool modbus serivce bug fix
+
+[33mcommit 23c93c537c289795235fe4d1310a674e1282f71e[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon May 18 16:53:29 2020 +0800
+
+    add modbus support and mimic joint plugin
+
+[33mcommit 0128d19d09f3c49410848f35f96c64352a12b669[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon May 18 16:52:42 2020 +0800
+
+    add modbus support and mimic joint plugin
+
+[33mcommit d0921d05c5d40b152f1cce6dbc24d06ebd5c0cb8[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu May 14 10:08:44 2020 +0800
+
+    try to clear initial error at xarm_driver
+
+[33mcommit ae3791b7d6863d4b460f4a7b4d6036d62ec6a287[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Apr 29 11:37:50 2020 +0800
+
+    add tool coordinate service support and update Readme
+
+[33mcommit 2da19f3f2002ffcf438d2eb227843e9fbead9fac[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Apr 27 19:02:55 2020 +0800
+
+    update root ReadMe
+
+[33mcommit fda86dcf7dae07e652e5a4c6f228a4e6f6e280fa[m[33m ([m[1;33mtag: v1.2.0[m[33m)[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Apr 27 18:47:05 2020 +0800
+
+    add support and example for dual-arm
+
+[33mcommit 2f46137de35b4f02bede338b747f78d60d69ed51[m[33m ([m[1;33mtag: v1.1.0[m[33m)[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Apr 20 17:35:19 2020 +0800
+
+    fix false non-zero return,which may require restart
+
+[33mcommit 1e4fdc87c9ac337416e03336a7811411d076a8cc[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Apr 13 19:35:33 2020 +0800
+
+    increase timeout for Motor enable
+
+[33mcommit b9735326b57b6d29b1e8d712bbc50dbb4f5517eb[m
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Fri Mar 20 07:32:14 2020 +0800
+
+    Update ReadMe.md
+
+[33mcommit be7702ea0b0aaa0fbf93ce12d449693574057a87[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Mar 19 20:15:12 2020 +0800
+
+    add set_load and move_servo_cart services
+
+[33mcommit 1d517a959e2538c813b3397e6de2c81640ed46b7[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Jan 14 10:01:24 2020 +0800
+
+    add real_time_update_rate in gazebo sim world
+
+[33mcommit d956104f6cb51537db73218cbbbdfa7a51444939[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Thu Jan 9 15:34:17 2020 +0800
+
+    remove unstable PID parameters for Gazebo, please ignore the 'No PID gains' Error
+
+[33mcommit 2f553d33990e5ab008d29a15ac7e8e4b6af934e2[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Oct 18 20:38:33 2019 +0800
+
+    support for group namespaces
+
+[33mcommit d53c5629c27ebbfbd57788d3e47888b322044a55[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Oct 11 11:54:28 2019 +0800
+
+    updated joint range
+
+[33mcommit 2df3010900ff31a7251b756e857b35e7ccb2a812[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Sep 17 19:34:42 2019 +0800
+
+    readme update
+
+[33mcommit 153af4999f22e3a04aa4719af2bdd7a37d7067ad[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Sep 17 18:49:00 2019 +0800
+
+    add xarm6_gripper_moveit_config
+
+[33mcommit 6bc8d12f511d06f1eaeef66957fe0f24a67a6f94[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Sep 17 10:16:41 2019 +0800
+
+    xarm_api support of Gripper control
+
+[33mcommit d9f5204cb7cd462f4428607ea3f51864baa2dc63[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Sep 9 09:39:42 2019 +0800
+
+    handle error and mode change
+
+[33mcommit b0a7dc154730ad50704ad24e084f3a585f98bdf0[m
+Merge: 2ef9b8d e666cb4
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Thu Aug 29 16:15:59 2019 +0800
+
+    Merge pull request #11 from RValner/master
+    
+    Fixed catkin build issues that are related to #3 and #9
+
+[33mcommit 2ef9b8d8378b12590507d40f09c2ed925a852673[m
+Merge: c69e137 df5a579
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Wed Aug 28 23:28:02 2019 +0800
+
+    Merge pull request #10 from kruusamae/master
+    
+    fixing prefixing for limited and effort_control
+
+[33mcommit e666cb40470b598bdb83617a73ab62c1b9bf483a[m
+Author: RValner <valnerrobert@gmail.com>
+Date:   Wed Aug 28 14:45:26 2019 +0300
+
+    The package can now be compiled with catkin build
+
+[33mcommit 6599f7733a53374cfcd0185273ff25f77339c459[m
+Author: RValner <valnerrobert@gmail.com>
+Date:   Wed Aug 28 14:22:52 2019 +0300
+
+    The package can now be compiled with catkin build
+
+[33mcommit df5a5797063501b5825ef88714670ca606fb4fd5[m
+Author: Karl K <karl.kruusamae@ut.ee>
+Date:   Wed Aug 28 12:28:11 2019 +0300
+
+    fixing prefixing for limited and effort_control
+
+[33mcommit c69e13764c2af1e537b753f36f5804114f89477d[m
+Merge: 740b016 c2f8e66
+Author: penglongxiang <penglongxiang1988@gmail.com>
+Date:   Tue Aug 27 23:30:41 2019 +0800
+
+    Merge pull request #7 from kruusamae/master
+    
+    fixed the use of prefix and added prefix to world_joint
+
+[33mcommit c2f8e66d1b5bbde9591517daabcff99004cbf0d6[m
+Author: Karl K <karl.kruusamae@ut.ee>
+Date:   Tue Aug 27 17:37:17 2019 +0300
+
+    fixed the use of prefix and added prefix to world_joint
+
+[33mcommit 740b016bd158f44df1990c780a27876b2acd167f[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Jul 29 16:46:50 2019 +0800
+
+    update DH and report length
+
+[33mcommit 778d9eabaddff4e207f1fa7bb895771cbc10b9b0[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Jun 24 16:49:28 2019 +0800
+
+    limited jnt range for moveit
+
+[33mcommit 93f22e0a8282ddb0b59485550013566b91567bee[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Jun 12 10:06:30 2019 +0800
+
+    v1.0.0
+
+[33mcommit 2c872d2f66f3985dbe716bfa7a286fe6389b8d2a[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Apr 26 11:41:53 2019 +0800
+
+    update xarm6 visual
+
+[33mcommit bcd2fd8566c89338ef0b708fc352ad5e9b3a64ac[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Tue Apr 23 18:32:34 2019 +0800
+
+    last jnt bug fix
+
+[33mcommit 81f578f9fbfba0bb5ee906717e952583e0119ad2[m[33m ([m[1;33mtag: v0.2.1[m[33m)[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Fri Apr 19 10:46:00 2019 +0800
+
+    xarm6 model update
+
+[33mcommit 0fee972ff5b444b8a8bfb0b083fa744f6d1981df[m[33m ([m[1;33mtag: v0.2.0[m[33m)[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Mon Apr 1 17:22:54 2019 +0800
+
+    add I/O and ErrClear
+
+[33mcommit 47d785ee58259115eb45ab807836c27fb53e94b9[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Feb 27 18:42:49 2019 +0800
+
+    better 6dof support
+
+[33mcommit 0afabde658b3e317222c695a06230598d9ca8eed[m[33m ([m[1;33mtag: v0.1.0[m[33m)[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Sat Jan 12 17:38:21 2019 +0800
+
+    v0.1.0
+
+[33mcommit 9d7b495abd16fa4133c0432ac1a7a13492e48486[m
+Author: jimy <jimy92@163.com>
+Date:   Tue Nov 13 23:57:57 2018 -0800
+
+    Modify the collision parameters of urdf
+    Fixed a bug where objects in gazebo did not collide when they touched.
+
+[33mcommit 38a1255cd44b3f97605ea5d6be343c30a9283b5c[m
+Author: Jason Peng <penglongxiang1988@gmail.com>
+Date:   Wed Nov 14 15:50:15 2018 +0800
+
+    add simulation demos and readme
+
+[33mcommit 019346d9a7ff66bdd2ff25123024dd8f297da197[m
+Author: jimy <jimy92@163.com>
+Date:   Mon Aug 6 05:25:23 2018 -0700
+
+    add the xarm_description folder

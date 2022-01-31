@@ -7,7 +7,7 @@
     <!-- option to launch move_group node or not -->
     <arg name="load_move_group" value="true" />
     <!-- whether to use fake_execution controller to drive the motion -->
-    <arg name="fake_execution" value="true" />
+    <arg name="fake_execution" value="false" />
     <arg name="gripper_controller" value="true" />
   </include>
 
