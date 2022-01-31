@@ -19,7 +19,7 @@ void* cmd_heart_beat(void* args)
     int max_cnt = CMD_HEARTBEAT_SEC * 2;
     while(my_driver->arm->is_connected())
     {
-        ros::Duration(0.5).sleep(); // non-realtime
+        ros::Duration(0.1).sleep(); // non-realtime
         cnt += 1;
         if (cnt >= max_cnt) {
             cnt = 0;

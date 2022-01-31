@@ -8,7 +8,7 @@
   <arg name="no_gui_plan" default="false" />
   <arg name="xarm_hw_ns" default="xarm" />
   <arg name="ext_ns" default="" />
-  <arg name="velocity_control" default="false"/>
+  <arg name="velocity_control" default="true"/>
   <arg name="enforce_limits" default="true" />
   <arg name="baud_checkset" default="true" />
 	<arg name="default_gripper_baud" default="2000000" />
@@ -39,28 +39,28 @@
   </include>
 
   <!-- load the joint trajectory controller specified in yaml -->
-  <rosparam file="$(find xarm_controller)/config/xarm7_traj_controller.yaml" command="load" ns="$(arg xarm_hw_ns)"/>
-  <arg name="xarm_traj_controller" value="$(eval 'xarm7_traj_controller_velocity' if arg('velocity_control') else 'xarm7_traj_controller')" />
+  <rosparam file="$(find xarm_controller)/config/xarm7_velocity_controllers.yaml" command="load" ns="$(arg xarm_hw_ns)"/>
+  <arg name="xarm_vel_controller" value="joint_group_velocity_controller" />
   <node
-    name="traj_controller_spawner"
+    name="velocity_controller_spawner"
     pkg="controller_manager"
     type="spawner"
     respawn="false"
     output="screen"
     ns="$(arg xarm_hw_ns)"
-    args="$(arg xarm_traj_controller)"/>
+    args="$(arg xarm_vel_controller)"/>
 
   <!-- <remap from="/follow_joint_trajectory" to="xarm/xarm7_traj_controller/follow_joint_trajectory"/> -->
-  <remap from="/follow_joint_trajectory" to="$(arg xarm_hw_ns)/$(arg xarm_traj_controller)/follow_joint_trajectory"/>
+  <remap from="/follow_joint_trajectory" to="$(arg xarm_hw_ns)/$(arg xarm_vel_controller)/follow_joint_trajectory"/>
 
-  <rosparam file="$(find xarm_controller)/config/xarm7_position_controllers.yaml" command="load" ns="$(arg xarm_hw_ns)"/>
+  <rosparam file="$(find xarm_controller)/config/xarm7_traj_controller.yaml" command="load" ns="$(arg xarm_hw_ns)"/>
   <node name="ros_control_controller_manager" 
     pkg="controller_manager" 
     type="controller_manager" 
     respawn="false" 
     output="screen"
     ns="/$(arg xarm_hw_ns)"
-    args="load joint_group_position_controller" />
+    args="load xarm7_traj_controller_velocity" />
 
   <!-- common part -->
   <remap from="/tf" to="$(arg ext_ns)/tf" />
