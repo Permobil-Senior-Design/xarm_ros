@@ -488,8 +488,8 @@
     name="${prefix}joint_tcp"
     type="fixed">
     <origin
-      xyz="0 0 0.03"
-      rpy="0 0 0" />
+      xyz="0 0 0.1"
+      rpy="0 0  0" />
     <parent
       link="${prefix}xarm_gripper_base_link" />
     <child
