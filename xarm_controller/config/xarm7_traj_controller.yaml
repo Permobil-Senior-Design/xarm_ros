@@ -38,14 +38,14 @@ xarm7_traj_controller_velocity:
       - joint5
       - joint6
       - joint7
-  # gains:
-  #   joint1: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
-  #   joint2: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
-  #   joint3: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
-  #   joint4: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
-  #   joint5: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
-  #   joint6: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
-  #   joint7: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
+  gains:
+    joint1: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
+    joint2: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
+    joint3: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
+    joint4: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
+    joint5: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
+    joint6: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
+    joint7: {p: 10, i: 0.1, d: 0.1, i_clamp: 0}
   # constraints:
   #   goal_time: 0.5
   #   stopped_velocity_tolerance: 0.05
@@ -75,13 +75,13 @@ xarm7_traj_controller_velocity:
   constraints:
     goal_time: 0.5
     stopped_velocity_tolerance: 0.05
-    joint1: {trajectory: 1, goal: 0.01}
-    joint2: {trajectory: 1, goal: 0.01}
-    joint3: {trajectory: 1, goal: 0.01}
-    joint4: {trajectory: 1, goal: 0.01}
-    joint5: {trajectory: 1, goal: 0.01}
-    joint6: {trajectory: 1, goal: 0.01}
-    joint7: {trajectory: 1, goal: 0.01}
+    # joint1: {trajectory: 1, goal: 0.01}
+    # joint2: {trajectory: 1, goal: 0.01}
+    # joint3: {trajectory: 1, goal: 0.01}
+    # joint4: {trajectory: 1, goal: 0.01}
+    # joint5: {trajectory: 1, goal: 0.01}
+    # joint6: {trajectory: 1, goal: 0.01}
+    # joint7: {trajectory: 1, goal: 0.01}
   stop_trajectory_duration: 0.2
   state_publish_rate:  25
   action_monitor_rate: 10

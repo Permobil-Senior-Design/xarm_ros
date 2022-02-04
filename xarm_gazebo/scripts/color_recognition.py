@@ -12,9 +12,11 @@ from cv_bridge import CvBridge
 from sensor_msgs.msg import CompressedImage
 
 if sys.version_info < (3, 0):
+    print(sys.version_info)
     PY3 = False
     import Queue as queue
 else:
+    #print('asdf')
     PY3 = True
     import queue
     
@@ -148,8 +150,13 @@ class GazeboMotionThread(threading.Thread):
         dof = kwargs.get('dof', 6)
         self._xarm_ctrl = XArmCtrl(dof)
         self._gripper_ctrl = GripperCtrl()
-        self._grab_z = kwargs.get('grab_z', 10)
-        self._safe_z = kwargs.get('safe_z', 100)
+        self._grab_z = kwargs.get('grab_z', 80)
+        print(self._grab_z)
+        print(self._grab_z)
+        print(self._grab_z)
+        print(self._grab_z)
+        print(self._grab_z)
+        self._safe_z = kwargs.get('safe_z', 110)
     
     @staticmethod
     def _rect_to_move_params(rect):
@@ -225,7 +232,7 @@ def get_recognition_rect(frame, lower=COLOR_DICT['red']['lower'], upper=COLOR_DI
         if PY3:
             box = cv2.boxPoints(rect)
         else:
-            box = cv2.cv.BoxPoints(rect)
+            box = cv2.boxPoints(rect)
         cv2.drawContours(frame, [np.int0(box)], -1, (0, 255, 255), 1)
         rects.append(rect)
     
