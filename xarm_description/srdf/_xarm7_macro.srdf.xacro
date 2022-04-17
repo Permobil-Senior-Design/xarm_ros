@@ -102,6 +102,15 @@
         <joint name="joint6" value="1.2559" />
         <joint name="joint7" value="-0.4934" />
     </group_state>
+     <group_state name="close_up" group="xarm7">
+        <joint name="joint1" value="-1.4053" />
+        <joint name="joint2" value="-1.3522" />
+        <joint name="joint3" value="2.2036" />
+        <joint name="joint4" value="0.5622" />
+        <joint name="joint5" value="-0.5051" />
+        <joint name="joint6" value="-1.5978" />
+        <joint name="joint7" value="-0.8709" />
+    </group_state>
 
     <!-- gripper -->
     <xacro:if value="${_use_gripper}">
