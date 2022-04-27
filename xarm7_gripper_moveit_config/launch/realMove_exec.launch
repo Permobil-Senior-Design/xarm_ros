@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="robot_ip" />
+  <arg name="robot_ip" default="192.168.1.203" />
   <arg name="report_type" default="normal" />	
   <!-- load the default move_group planner (not xarm_simple_planner) -->
   <arg name="show_rviz" default="true" />
@@ -8,7 +8,7 @@
   <arg name="no_gui_plan" default="false" />
   <arg name="xarm_hw_ns" default="xarm" />
   <arg name="ext_ns" default="" />
-  <arg name="velocity_control" default="false"/>
+  <arg name="velocity_control" default="true"/>
   <arg name="enforce_limits" default="true" />
   
   <!-- xArm gripper baudrate checking configurations -->
@@ -45,6 +45,17 @@
   <remap from="arm_controller/follow_joint_trajectory" to="$(arg xarm_hw_ns)/$(arg xarm_traj_controller)/follow_joint_trajectory"/>
   <remap from="xarm_gripper/gripper_action" to="$(arg xarm_hw_ns)/xarm_gripper/gripper_action"/>
 
+  <rosparam file="$(find xarm_controller)/config/xarm7_velocity_controllers.yaml" command="load" ns="$(arg xarm_hw_ns)"/>
+  <arg name="xarm_vel_controller" value="joint_group_velocity_controller" />
+  <node
+    name="ros_control_controller_manager"
+    pkg="controller_manager"
+    type="controller_manager"
+    respawn="false"
+    output="screen"
+    ns="$(arg xarm_hw_ns)"
+    args="load $(arg xarm_vel_controller)"/>
+  
   <!-- common part -->
   <remap from="/tf" to="$(arg ext_ns)/tf" />
   <remap from="/tf_static" to="$(arg ext_ns)/tf_static" />

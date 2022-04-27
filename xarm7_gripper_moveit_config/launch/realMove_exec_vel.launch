@@ -29,7 +29,8 @@
     <arg name="default_gripper_baud" value="$(arg default_gripper_baud)" />
   </include>
 
-  <!-- load the joint trajectory controller specified in yaml -->
+  <!-- load the joint velocity controller specified in yaml -->
+ 
   <rosparam file="$(find xarm_controller)/config/xarm7_velocity_controllers.yaml" command="load" ns="$(arg xarm_hw_ns)"/>
   <arg name="xarm_vel_controller" value="joint_group_velocity_controller" />
   <node
@@ -41,18 +42,29 @@
     ns="$(arg xarm_hw_ns)"
     args="$(arg xarm_vel_controller)"/>
 
-  <!-- <remap from="/follow_joint_trajectory" to="xarm/xarm7_traj_controller/follow_joint_trajectory"/> -->
-  <remap from="/follow_joint_trajectory" to="$(arg xarm_hw_ns)/$(arg xarm_vel_controller)/follow_joint_trajectory"/>
+  <!--
+  <node name="ros_control_controller_manager" pkg="controller_manager" type="controller_manager" respawn="false" output="screen" args="load $(arg xarm_vel_controller)" />
+  -->
+  <remap from="/follow_joint_trajectory" to="xarm/xarm7_traj_controller/follow_joint_trajectory"/> 
+  
+  <!--<remap from="arm_controller/follow_joint_trajectory" to="$(arg xarm_hw_ns)/$(arg xarm_vel_controller)/follow_joint_trajectory"/>-->
 
+  <!-- load the joint trajectory controller specified in yaml -->
+  <!--
   <rosparam file="$(find xarm_controller)/config/xarm7_traj_controller.yaml" command="load" ns="$(arg xarm_hw_ns)"/>
-  <node name="ros_control_controller_manager" 
-    pkg="controller_manager" 
-    type="controller_manager" 
-    respawn="false" 
+  <arg name="xarm_traj_controller" value="$(eval 'xarm7_traj_controller_velocity' if arg('velocity_control') else 'xarm7_traj_controller')" />
+  <node
+    name="traj_controller_spawner"
+    pkg="controller_manager"
+    type="spawner"
+    respawn="false"
     output="screen"
-    ns="/$(arg xarm_hw_ns)"
-    args="load xarm7_traj_controller_velocity" />
-
+    ns="$(arg xarm_hw_ns)"
+    args="$(arg xarm_traj_controller)"/>
+-->
+<!--
+  <remap from="arm_controller/follow_joint_trajectory" to="$(arg xarm_hw_ns)/$(arg xarm_traj_controller)/follow_joint_trajectory"/>
+-->
   <remap from="xarm_gripper/gripper_action" to="$(arg xarm_hw_ns)/xarm_gripper/gripper_action"/>
 
   <!-- common part -->
@@ -66,5 +78,8 @@
     <arg name="NO_GUI_CTRL" value="$(arg no_gui_plan)"/>
     <arg name="gripper_controller" value="false" />
   </include>
+
+  <param name="move_group/capabilities" value="move_group/ExecuteTaskSolutionCapability" />
+
 
 </launch>
