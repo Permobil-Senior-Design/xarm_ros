@@ -140,6 +140,7 @@
       <passive_joint name="${prefix}right_outer_knuckle_joint" />
       <passive_joint name="${prefix}right_finger_joint" />
       <!-- DISABLE COLLISIONS, By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+     <!-- <disable_collisions link1="octomap" link2="${prefix}link_eef" reason="User" /> -->
       <disable_collisions link1="${prefix}left_finger" link2="${prefix}left_inner_knuckle" reason="Default" />
       <disable_collisions link1="${prefix}left_finger" link2="${prefix}left_outer_knuckle" reason="Adjacent" />
       <disable_collisions link1="${prefix}left_finger" link2="${prefix}link5" reason="Never" />
