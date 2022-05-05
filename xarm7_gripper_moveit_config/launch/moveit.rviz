@@ -6,12 +6,12 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /MotionPlanning1
         - /MotionPlanning1/Scene Geometry1
         - /MotionPlanning1/Planning Request1
         - /MotionPlanning1/Planning Metrics1
         - /MotionPlanning1/Planned Path1
         - /RobotState1
-        - /RobotState1/Status1
       Splitter Ratio: 0.7425600290298462
     Tree Height: 307
   - Class: rviz/Help
@@ -30,7 +30,7 @@ Panels:
     Name: Motion Planning Tasks
     Tasks View:
       property_splitter:
-        - 313
+        - 312
         - 110
       solution_sorting:
         column: 0
@@ -161,6 +161,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           link_tcp:
             Alpha: 1
             Show Axes: false
@@ -220,7 +221,7 @@ Visualization Manager:
       Planning Scene Topic: move_group/monitored_planning_scene
       Robot Description: robot_description
       Scene Geometry:
-        Scene Alpha: 1
+        Scene Alpha: 0.10000000149011612
         Scene Color: 50; 230; 50
         Scene Display Time: 0.20000000298023224
         Show Scene Geometry: true
@@ -293,6 +294,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           link_tcp:
             Alpha: 1
             Show Axes: false
@@ -401,6 +403,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           link_tcp:
             Alpha: 1
             Show Axes: false
@@ -546,6 +549,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+          Value: true
         link_tcp:
           Alpha: 1
           Show Axes: false
@@ -613,10 +617,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.15979601442813873
+      Pitch: 0.22979646921157837
       Target Frame: world
       Value: XYOrbit (rviz)
-      Yaw: 5.899953365325928
+      Yaw: 3.5417630672454834
     Saved: ~
 Window Geometry:
   Displays:
